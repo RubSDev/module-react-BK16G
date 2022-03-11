@@ -1,17 +1,23 @@
-import React from "react";
-
+import logo from "./logo.svg";
 import "./App.css";
-import Card from "./components/Card";
 
-function Layout(props) {
-  return <div id="layout"></div>;
-}
 function App() {
   return (
     <div className="App">
-      <Layout>
-        <Card />
-      </Layout>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>Hello world from react !</p>
+        <a
+          className="App-link"
+          href="https://github.com/RubSDev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Soy RubS Github
+        </a>
+        <br />
+        <footer>Kodemia ©2022 hecho con amor por RubS </footer>
+      </header>
     </div>
   );
 }
