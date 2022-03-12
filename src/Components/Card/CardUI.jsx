@@ -1,4 +1,6 @@
+import { Button } from "bootstrap";
 import React from "react";
+import { Badge } from "react-bootstrap";
 import "./card-style.css";
 
 const Card = (props) => {
@@ -13,6 +15,9 @@ const Card = (props) => {
       <a href="#" className="btn btn-outline-success">
         Comprar
       </a>
+      <Badge className=" Badge" primary pill>
+        Numero de producto {props.coutNumber}
+      </Badge>
     </div>
   );
 };
